@@ -1,9 +1,14 @@
 * {
     font-family: 'Brush Script MT', Arial, Helvetica, sans-serif;
+    Color:black;
 
     --backgroundColor: #e8e3d980;
-    --backgroundColorLighter: #fcfbfa0c;
 
+    --buttonBackgroundColor1:  #ffffff;
+    --buttonBackgroundColor2: #e8e3d9;
+    
+    /* --labelBackgroundColor: rgb(250, 250, 250); */
+    --labelBackgroundColor: #f8f6f1c0;
   }
 
 
@@ -13,25 +18,57 @@
     position: sticky;
     top: 0px;
     z-index: 2;
+    width: 700px;
+    margin: auto;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
 
     display: flex;
     flex-direction: row;
     flex-wrap:nowrap;
     justify-content: center;
-    background-color: #e8e3d9;
+
+    
   }
 
-  .topMenuDiv button{
+  button {
 
+    border-style: none;
+    background-color: var(--buttonBackgroundColor1);
+    height: 40px;
+    
   }
+
+  button:hover{
+    background-color: var(--buttonBackgroundColor2);
+   
+  }
+
+  button a{
+    text-decoration: none;
+    font-weight:400;
+    position: relative;
+    top: -6px;
+  }
+
+  /* Main content Div */
 
   .mainContent{
     padding-top: 140px;
+
+    background-image: url("images/backgrounds/5.png");
+    background-size: cover;
+
   }
 
   /* Header  */
+  
   header {
-    background-color: var(--backgroundColor) ;
+
+    background-image: url("images/backgrounds/2.png");
+    background-size: cover;
+    background-attachment:fixed;
+
     height: 300px;
     padding: 10px 30px 0 30px;
     text-align: center;
@@ -50,6 +87,11 @@
   
   }
 
+  header p{
+    position: relative;
+    top: -10px;
+  }
+
 
 /* Bio section */
 
@@ -57,14 +99,8 @@
     width: 70%;
     margin: auto;
 
-
-    /* background-color: #e8e3d980; */
-
   }
-/* 
-  .bioSectionDiv h2{
-    text-align: center;
-  } */
+
 
   @media only screen and (max-width: 850px){ /* Bio section for small screens */
     .bioSectionDiv{
@@ -85,7 +121,10 @@
   .sectionDiv{
     width: 80%;
     max-width: 1500px;
+    min-width: 450px;
     margin: auto;
+
+
 
 
   }
@@ -109,13 +148,18 @@
     width: 45%;
     min-width: 400px;
 
-
   }
 
   .contentCard h3{
     text-align: center;
-  }
 
+  }
+  
+  .contentCard h3 span{
+    text-align: center;
+    background-color: var(--labelBackgroundColor);
+    padding: 5px 20px 5px 20px;
+  }
   
   .contentCard img{
     width: 100%;
@@ -133,31 +177,14 @@
     position: relative;
     top: -15px;
     color: rgba(0, 0, 0, 0.493);
+
+    background-color: var(--labelBackgroundColor);
   }
-
-  /* Top Buttons */
-
-  button {
-    background-color: white;
-    padding: 5px 8px 5px 8px;
-    border-radius: 10%;
-    border: 2px solid var(--backgroundColor);
-  }
-
-  button:hover{
-    background-color: var(--backgroundColorLighter);
-  }
-
-  button a{
-    text-decoration: none;
-  }
-
 
   
   /* Decorative lines */
 
   .sectionLineDivider{
-    /* border-top: solid 1px #ed8f42; */
     border-top: solid 1px var(--backgroundColor) ;
     width: 70%;
     margin: auto;
@@ -178,7 +205,12 @@
   footer{
     background-color: var(--backgroundColor) ;
     text-align: center;
-    height: 80px;
+    height: 90px;
+  }
+
+  footer h3{
+    position: relative;
+    top: 8px;
   }
 
   .footerFlexContainer{
@@ -191,4 +223,8 @@
   th, td{
     width: 190px;
 
+  }
+
+  td a:hover{
+    background-color: white;
   }
