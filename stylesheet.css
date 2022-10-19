@@ -33,6 +33,7 @@
 
     border-style: none;
     background-color: var(--buttonBackgroundColor1);
+    border-radius: 3px;
     height: 40px;
     
   }
@@ -66,8 +67,9 @@
   .mainContent{
     padding-top: 140px;
 
-    background-image: url("images/backgrounds/5.png");
+    background-image: url("images/backgrounds/2.png");
     background-size: cover;
+    background-attachment:fixed;
 
   }
 
@@ -109,6 +111,15 @@
     width: 70%;
     margin: auto;
 
+    background-color: rgba(255, 255, 255, 0.377);
+    border-top-left-radius: 100px 160px;
+    border-bottom-right-radius: 160px 100px;
+    padding: 5px 20px 20px 20px;
+
+  }
+
+  .bioSectionDiv p{
+    font-size: 25px;
   }
 
 
@@ -134,13 +145,20 @@
     min-width: 450px;
     margin: auto;
 
+    background-color: rgba(255, 255, 255, 0.486);
+    /* border-radius: 100px; */
 
+    border-top-left-radius: 150px 180px;
+    border-bottom-right-radius: 180px 150px;
 
 
   }
   
   .sectionDiv h2{
     text-align: center;
+    position: relative;
+    top: 20px;
+
 
   }
 
@@ -157,6 +175,9 @@
   .contentCard{
     width: 45%;
     min-width: 400px;
+    margin-top: 20px;
+
+    /* background-color: white; */
 
   }
 
@@ -206,7 +227,7 @@
     border-top: solid 1px var(--backgroundColor) ;
     width: 300px;
     margin: auto;
-    margin-top: 20px;
+    margin-top: 35px;
     margin-bottom: 10px;
   }
 
@@ -215,15 +236,17 @@
   footer{
     background-color: var(--backgroundColor) ;
     text-align: center;
-    height: 90px;
+    height: 150px;
   }
 
   footer h3{
     position: relative;
-    top: 8px;
+    top: 20px;
   }
 
   .footerFlexContainer{
+    position: relative;
+    top: 30px;
     width: 100%;
     display: flex;
     justify-content: center;
