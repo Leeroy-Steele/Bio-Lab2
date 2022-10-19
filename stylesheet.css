@@ -4,13 +4,11 @@
 
     --backgroundColor: #e8e3d980;
 
-    --buttonBackgroundColor1:  #ffffff;
+    --buttonBackgroundColor1:  #e4eef7;
     --buttonBackgroundColor2: #e8e3d9;
     
-    /* --labelBackgroundColor: rgb(250, 250, 250); */
     --labelBackgroundColor: #f8f6f1c0;
   }
-
 
   /* Top menu buttons */
 
@@ -51,6 +49,18 @@
     top: -6px;
   }
 
+  button h4{
+    color: rgba(0, 0, 0, 0.651);
+  }
+
+  .buttonDividerLines{
+    border-left: 3px solid var(--buttonBackgroundColor2);
+    position: relative;
+    top: 10px;
+    height: 30px;
+    /* width: 10px; */
+  }
+
   /* Main content Div */
 
   .mainContent{
@@ -62,7 +72,7 @@
   }
 
   /* Header  */
-  
+
   header {
 
     background-image: url("images/backgrounds/2.png");
