@@ -13,6 +13,7 @@
   /* Top menu buttons */
 
   .topMenuDiv{
+ 
     position: sticky;
     top: 0px;
     z-index: 2;
@@ -65,6 +66,7 @@
 
   .mainContent{
     padding-top: 140px;
+    min-width: 425px;
 
     /* background-image: url("images/backgrounds/2.png"); */
     background: linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3) ), url("images/backgrounds/2.png");
@@ -79,27 +81,26 @@
   header {
 
     background-image: url("images/backgrounds/2.png");
-
-
-    background-size: cover;
+    background-size:cover ;
     background-attachment:fixed;
 
     height: 300px;
     padding: 10px 30px 0 30px;
     text-align: center;
+    min-width: 365px;
 
   }
 
   header h1{
     font-size: 40px;
- 
+  
   }
 
   header img {
     width: 300px;
     position: relative;
     border-radius: 50%;
-  
+
   }
 
   header p{
@@ -153,7 +154,6 @@
 
     border-top-left-radius: 150px 180px;
     border-bottom-right-radius: 180px 150px;
-
 
   }
   
